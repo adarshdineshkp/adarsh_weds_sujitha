@@ -148,11 +148,11 @@ section:not(.on) *{animation-play-state:paused!important}
 <section id="sd"><h2 class="bi">Save the Date</h2><div class="sm bi" style="--d:.2s">Pull the tassel to unroll</div>
  <div class="sc" id="sc"><div class="rod"></div>
   <div class="pp"><i class="rs" style="left:4px;top:4px"></i><i class="rs" style="right:4px;top:4px"></i><i class="rs" style="left:4px;bottom:4px"></i><i class="rs" style="right:4px;bottom:4px"></i>
-   <div class="pf" style="font-size:24px;font-style:italic">Save the Date</div><div class="sm">Friday</div><div class="big">15</div><div class="pf" style="font-size:24px">January 2027</div><div class="sm">10:00 AM – 12:00 PM</div></div>
+   <div class="pf" style="font-size:24px;font-style:italic">Save the Date</div><div class="sm">Friday</div><div class="big">15</div><div class="pf" style="font-size:24px">January 2027</div></div>
   <div class="roll"><div class="tas" id="tas"><i></i></div><div class="fg" id="fg"></div></div>
  </div>
  <div id="cdn">&nbsp;</div>
- <a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Adarsh%20%26%20Sujitha%20Wedding&dates=20270115T043000Z/20270115T063000Z&location=Mascot%20Beach%20Resort">Add to calendar</a></section>
+ <a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Adarsh%20%26%20Sujitha%20Wedding&dates=20270115/20270116&location=Mascot%20Beach%20Resort">Add to calendar</a></section>
 <section id="lc"><h2 class="bi">Location</h2><div class="sm bi" style="--d:.2s">Mascot Beach Resort</div>
  <a class="mp" target="_blank" rel="noopener" href="https://maps.app.goo.gl/hzCNfHPnR25TMeas9"><svg viewBox="0 0 300 200"><rect width="300" height="200" fill="#f3ead8"/><path d="M0 150Q80 120 160 150T300 120V200H0z" fill="#d7e5d0"/><g stroke="#fff" stroke-width="9" fill="none"><path d="M-10 60L310 90"/><path d="M90-10L130 210"/><path d="M200-10L180 210"/></g><path class="rt" d="M20 170C70 150 90 100 130 95S180 70 215 60" stroke="#b8903a" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="300"/><circle cx="20" cy="170" r="6" fill="#6e1f2f"/><g class="pin"><path d="M215 62c-14-14-14-30 0-38s30 4 20 24z" transform="translate(-6 0)" fill="#6e1f2f"/><circle cx="215" cy="32" r="5" fill="#fbf3e8"/></g></svg></a>
  <a class="btn s" target="_blank" rel="noopener" href="https://maps.app.goo.gl/hzCNfHPnR25TMeas9">Get directions</a> <button class="btn" id="cp">Copy address</button></section>
@@ -198,7 +198,7 @@ document.addEventListener('visibilitychange',()=>{if(document.hidden)au.pause();
 /* sections */
 function obs(){const io=new IntersectionObserver(es=>es.forEach(e=>{e.target.classList.toggle('on',e.isIntersecting);if(e.isIntersecting)e.target.classList.add('seen')}),{threshold:.25});$$('section').forEach(s=>io.observe(s))}
 /* countdown */
-const T=new Date('2027-01-15T10:00:00+05:30');
+const T=new Date('2027-01-15T00:00:00+05:30');
 function cd(){if(!$('#sd').classList.contains('on'))return;let d=Math.max(0,T-Date.now()),z=n=>String(n).padStart(2,'0');$('#cdn').textContent=`${Math.floor(d/864e5)}d · ${z(Math.floor(d/36e5)%24)}h · ${z(Math.floor(d/6e4)%60)}m · ${z(Math.floor(d/1e3)%60)}s`}setInterval(cd,1000);
 /* scroll pull */
 const S=$('#sc'),tas=$('#tas');let p=0,done=0,dr=0,y0=0,p0=0,mv=0;
